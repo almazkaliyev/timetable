@@ -25,7 +25,7 @@ function App() {
             variant='fullWidth'
             value={value}
             onChange={handleChange}>
-          <Tab label='ПН' component={Link} to='/monday' />
+          <Tab label='ПН' component={Link} to='/' />
           <Tab label='ВТ' component={Link} to='/tuesday' />
           <Tab label='СР' component={Link} to='/wednesday' />
           <Tab label='ЧТ' component={Link} to='/thursday' />
@@ -33,7 +33,7 @@ function App() {
         </Tabs>
       </AppBar>
       <Switch>
-        <Route path='/monday' component={Monday} />
+        <Route path='/' component={Monday} />
         <Route path='/tuesday' component={Tuesday} />
         <Route path='/wednesday' component={Wednesday} />
         <Route path='/thursday' component={Thursday} />
