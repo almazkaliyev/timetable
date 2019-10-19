@@ -31,7 +31,7 @@ function Monday() {
       id: '2',
       startTime: '11:50',
       endTime: '13:20',
-      title: 'Этнопедагогика',
+      title: 'Этнопедагогика / Практика',
       cabinet: '310',
       teachers: 'Венгловская Н.С'
     }
