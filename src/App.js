@@ -50,7 +50,10 @@ function App() {
       <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={value}
-          onChangeIndex={handleChangeIndex} style={{height: '80vh'}}>
+          onChangeIndex={handleChangeIndex}
+          style={{
+            height: '80vh'
+      }}>
         <TabPanel value={value} index={0} dir={theme.direction}>
           <Monday/>
         </TabPanel>
@@ -67,7 +70,14 @@ function App() {
           <Friday/>
         </TabPanel>
       </SwipeableViews>
-      <Copyright/>
+      <Box style={{
+        width: '100%',
+        position: 'fixed',
+        bottom: '10px',
+        textAlign: 'center'
+      }}>
+        <Copyright/>
+      </Box>
     </div>
   );
 }
