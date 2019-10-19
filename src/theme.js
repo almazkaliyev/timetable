@@ -1,5 +1,4 @@
 import {createMuiTheme, responsiveFontSizes} from "@material-ui/core";
-import {red} from "@material-ui/core/colors";
 
 let theme = createMuiTheme({
   palette: {
@@ -13,12 +12,6 @@ let theme = createMuiTheme({
       main: '#aa00ff',
       light: '#e254ff',
       dark: '#7200ca'
-    },
-    error: {
-      main: red[500]
-    },
-    typography: {
-      fontSize: 8,
     }
   },
 });
