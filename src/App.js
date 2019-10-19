@@ -25,11 +25,11 @@ function App() {
             variant='fullWidth'
             value={value}
             onChange={handleChange}>
-          <Tab label='MON' component={Link} to='/monday' />
-          <Tab label='TUE' component={Link} to='/tuesday' />
-          <Tab label='WED' component={Link} to='/wednesday' />
-          <Tab label='THU' component={Link} to='/thursday' />
-          <Tab label='FRI' component={Link} to='/friday' />
+          <Tab label='ПН' component={Link} to='/monday' />
+          <Tab label='ВТ' component={Link} to='/tuesday' />
+          <Tab label='СР' component={Link} to='/wednesday' />
+          <Tab label='ЧТ' component={Link} to='/thursday' />
+          <Tab label='ПТ' component={Link} to='/friday' />
         </Tabs>
       </AppBar>
       <Switch>
