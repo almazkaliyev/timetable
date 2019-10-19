@@ -1,11 +1,17 @@
 import React, {useState} from 'react'
-import {AppBar, Box, Tab, Tabs, useTheme} from '@material-ui/core'
+import {AppBar, Box, makeStyles, Tab, Tabs, useTheme} from '@material-ui/core'
 import SwipeableViews from 'react-swipeable-views'
 import Monday from './days/Monday'
 import Tuesday from './days/Tuesday'
 import Wednesday from './days/Wednesday'
 import Thursday from './days/Thursday'
 import Friday from './days/Friday'
+
+const useStyles = makeStyles(theme => ({
+  content: {
+    height: '90vh'
+  }
+}));
 
 function TabPanel(props) {
   const { children } = props;
@@ -17,6 +23,7 @@ function TabPanel(props) {
 }
 
 function App() {
+  const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = useState(0);
 
@@ -49,7 +56,8 @@ function App() {
       <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={value}
-          onChangeIndex={handleChangeIndex}>
+          onChangeIndex={handleChangeIndex}
+          className={classes.content}>
         <TabPanel value={value} index={0} dir={theme.direction}>
           <Monday/>
         </TabPanel>
