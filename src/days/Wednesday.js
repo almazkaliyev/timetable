@@ -16,7 +16,7 @@ function Wednesday() {
       startTime: '08:30',
       endTime: '10:00',
       title: 'Психология / МНПИ',
-      cabinet: '',
+      cabinet: '303 / 303',
       teachers: 'Виссарионова Е.Н. / Бичун Л.В.'
     },
     {
@@ -24,7 +24,7 @@ function Wednesday() {
       startTime: '10:10',
       endTime: '11:40',
       title: 'Методика иностранного языка',
-      cabinet: '',
+      cabinet: '302 / 303',
       teachers: 'Немилостева Е.Д.'
     },
     {
@@ -32,7 +32,7 @@ function Wednesday() {
       startTime: '11:50',
       endTime: '13:20',
       title: 'Этнопедагогика',
-      cabinet: '',
+      cabinet: '26',
       teachers: 'Венгловская Н.С'
     }
     ,

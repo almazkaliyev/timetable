@@ -16,7 +16,7 @@ function Monday() {
       startTime: '08:30',
       endTime: '10:00',
       title: 'Домашнее чтение',
-      cabinet: '',
+      cabinet: '208',
       teachers: 'Анциферова Л.В. / Немилостева Е.Д.'
     },
     {
@@ -24,7 +24,7 @@ function Monday() {
       startTime: '10:10',
       endTime: '11:40',
       title: 'Педагогика',
-      cabinet: '',
+      cabinet: '211',
       teachers: 'Яровая Н.Л.'
     },
     {
@@ -32,7 +32,7 @@ function Monday() {
       startTime: '11:50',
       endTime: '13:20',
       title: 'Этнопедагогика',
-      cabinet: '',
+      cabinet: '310',
       teachers: 'Венгловская Н.С'
     }
   ];

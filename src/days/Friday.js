@@ -16,7 +16,7 @@ function Friday() {
       startTime: '08:30',
       endTime: '10:00',
       title: 'Родной язык в начальной школе',
-      cabinet: '',
+      cabinet: '302',
       teachers: 'Хильченко О.А.'
     },
     {
@@ -32,7 +32,7 @@ function Friday() {
       startTime: '10:40',
       endTime: '12:20',
       title: 'Практическая грамматика',
-      cabinet: '',
+      cabinet: '208 / 403',
       teachers: 'Анциферова Л.В. / Бурумбаева А.М.'
     },
     {
@@ -40,7 +40,7 @@ function Friday() {
       startTime: '12:30',
       endTime: '14:00',
       title: 'Делопроизводство',
-      cabinet: '',
+      cabinet: '29',
       teachers: 'Кусаинова А.Б.'
     }
   ];

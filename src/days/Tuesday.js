@@ -16,7 +16,7 @@ function Tuesday() {
       startTime: '10:10',
       endTime: '11:40',
       title: 'Практикум',
-      cabinet: '',
+      cabinet: '208 / 403',
       teachers: 'Анциферова Л.В. / Бурумбаева А.М.'
     },
     {
@@ -24,7 +24,7 @@ function Tuesday() {
       startTime: '11:50',
       endTime: '13:20',
       title: 'МНПИ',
-      cabinet: '',
+      cabinet: '405',
       teachers: 'Бичун Л.В.'
     },
     {
@@ -32,7 +32,7 @@ function Tuesday() {
       startTime: '14:00',
       endTime: '15:30',
       title: 'Теоретическая грамматика',
-      cabinet: '',
+      cabinet: '208',
       teachers: 'Анциферова Л.В.'
     }
   ];
