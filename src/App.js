@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {BrowserRouter} from 'react-router-dom'
 import {AppBar, Box, Tab, Tabs, useTheme} from '@material-ui/core'
 import SwipeableViews from 'react-swipeable-views'
 import Monday from './days/Monday'
@@ -30,7 +29,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <div>
       <AppBar
           position='static'
           color='default'>
@@ -67,7 +66,7 @@ function App() {
           <Friday/>
         </TabPanel>
       </SwipeableViews>
-    </BrowserRouter>
+    </div>
   );
 }
 
