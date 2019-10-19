@@ -1,19 +1,13 @@
 import React, {useState} from 'react'
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom'
-import {AppBar, makeStyles, Tab, Tabs} from '@material-ui/core'
+import {AppBar, Tab, Tabs} from '@material-ui/core'
 import Monday from './days/Monday'
 import Tuesday from './days/Tuesday'
 import Wednesday from './days/Wednesday'
 import Thursday from './days/Thursday'
 import Friday from './days/Friday'
 
-const useStyles = makeStyles(theme => ({
-
-}));
-
 function App() {
-  const classes = useStyles();
-
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
