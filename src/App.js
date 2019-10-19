@@ -73,7 +73,7 @@ function App() {
       <Box style={{
         width: '100%',
         position: 'fixed',
-        bottom: '10px',
+        bottom: '5vh',
         textAlign: 'center'
       }}>
         <Copyright/>
