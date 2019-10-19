@@ -24,9 +24,9 @@ function Subject({data}) {
             <Typography variant="subtitle2">{data.endTime}</Typography>
           </Grid>
           <Grid item>
-            <Typography gutterBottom variant="subtitle1">{data.title}</Typography>
-            <Typography gutterBottom variant="caption">{data.cabinet}</Typography>
-            <Typography variant="caption">{data.teachers}</Typography>
+            <Typography variant="h6">{data.title}</Typography>
+            <Typography variant="body2">{data.cabinet}</Typography>
+            <Typography variant="body2">{data.teachers}</Typography>
           </Grid>
         </Grid>
       </Paper>
