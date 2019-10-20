@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import {AppBar, Box, Tab, Tabs, useTheme} from '@material-ui/core'
 import SwipeableViews from 'react-swipeable-views'
-import Monday from './days/Monday'
-import Tuesday from './days/Tuesday'
-import Wednesday from './days/Wednesday'
-import Thursday from './days/Thursday'
-import Friday from './days/Friday'
-import Copyright from './Copyright'
+import Monday from './components/days/Monday'
+import Tuesday from './components/days/Tuesday'
+import Wednesday from './components/days/Wednesday'
+import Thursday from './components/days/Thursday'
+import Friday from './components/days/Friday'
+import Copyright from './components/Copyright'
 
 function TabPanel(props) {
   const { children } = props;
