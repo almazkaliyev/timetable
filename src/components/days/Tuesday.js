@@ -17,7 +17,8 @@ function Tuesday() {
       endTime: '11:40',
       title: 'Практикум',
       cabinet: '208 / 403',
-      teachers: 'Анциферова Л.В. / Бурумбаева А.М.'
+      teachers: 'Анциферова Л.В. / Бурумбаева А.М.',
+      isActive: false
     },
     {
       id: '1',
@@ -25,7 +26,8 @@ function Tuesday() {
       endTime: '13:20',
       title: 'МНПИ',
       cabinet: '405',
-      teachers: 'Бичун Л.В.'
+      teachers: 'Бичун Л.В.',
+      isActive: false
     },
     {
       id: '2',
@@ -33,7 +35,8 @@ function Tuesday() {
       endTime: '15:30',
       title: 'Теоретическая грамматика',
       cabinet: '208',
-      teachers: 'Анциферова Л.В.'
+      teachers: 'Анциферова Л.В.',
+      isActive: false
     },
     {
       id: '3',
@@ -41,7 +44,8 @@ function Tuesday() {
       endTime: '17:10',
       title: 'Физическая культура / Практика',
       cabinet: '',
-      teachers: 'Глинов В.П. / Аверкина А.В.'
+      teachers: 'Глинов В.П. / Аверкина А.В.',
+      isActive: false
     }
   ];
 

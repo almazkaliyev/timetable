@@ -17,7 +17,8 @@ function Wednesday() {
       endTime: '10:00',
       title: 'Психология / МНПИ',
       cabinet: '303 / 303',
-      teachers: 'Виссарионова Е.Н. / Бичун Л.В.'
+      teachers: 'Виссарионова Е.Н. / Бичун Л.В.',
+      isActive: false
     },
     {
       id: '1',
@@ -25,7 +26,8 @@ function Wednesday() {
       endTime: '11:40',
       title: 'Методика иностранного языка',
       cabinet: '302 / 303',
-      teachers: 'Немилостева Е.Д.'
+      teachers: 'Немилостева Е.Д.',
+      isActive: false
     },
     {
       id: '2',
@@ -33,7 +35,8 @@ function Wednesday() {
       endTime: '13:20',
       title: 'Этнопедагогика',
       cabinet: '26',
-      teachers: 'Венгловская Н.С'
+      teachers: 'Венгловская Н.С',
+      isActive: false
     }
     ,
     {
@@ -42,7 +45,8 @@ function Wednesday() {
       endTime: '15:30',
       title: 'Практикум',
       cabinet: '',
-      teachers: 'Анциферова Л.В. / Бурумбаева А.М.'
+      teachers: 'Анциферова Л.В. / Бурумбаева А.М.',
+      isActive: false
     }
   ];
 

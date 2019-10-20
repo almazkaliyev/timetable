@@ -17,7 +17,8 @@ function Friday() {
       endTime: '10:00',
       title: 'Родной язык в начальной школе',
       cabinet: '302',
-      teachers: 'Хильченко О.А.'
+      teachers: 'Хильченко О.А.',
+      isActive: false
     },
     {
       id: '1',
@@ -25,7 +26,8 @@ function Friday() {
       endTime: '10:35',
       title: 'Кураторский час',
       cabinet: '',
-      teachers: ''
+      teachers: '',
+      isActive: false
     },
     {
       id: '2',
@@ -33,7 +35,8 @@ function Friday() {
       endTime: '12:20',
       title: 'Практическая грамматика',
       cabinet: '208 / 403',
-      teachers: 'Анциферова Л.В. / Бурумбаева А.М.'
+      teachers: 'Анциферова Л.В. / Бурумбаева А.М.',
+      isActive: false
     },
     {
       id: '3',
@@ -41,7 +44,8 @@ function Friday() {
       endTime: '14:00',
       title: 'Делопроизводство',
       cabinet: '29',
-      teachers: 'Кусаинова А.Б.'
+      teachers: 'Кусаинова А.Б.',
+      isActive: false
     }
   ];
 
