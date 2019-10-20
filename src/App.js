@@ -18,8 +18,10 @@ function TabPanel(props) {
 }
 
 function App() {
+  const date = new Date();
+  let day = date.getDay();
   const theme = useTheme();
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState((day === 0 || day === 6) ? 0 : --day);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
