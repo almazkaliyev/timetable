@@ -51,7 +51,7 @@ function Wednesday() {
   return(
       <Container className={classes.container}>
         {subjects.map(subject => (
-            <Subject data={subject} />
+            <Subject key={subject.id} data={subject} />
         ))}
       </Container>
   )

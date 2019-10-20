@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="585e7aae-1474-40eb-9895-67e7bf97c695" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/days/Tuesday.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/days/Tuesday.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Subject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Subject.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +29,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\almaz\projects\timetable\src\components" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -73,7 +78,7 @@
       <workItem from="1571495806000" duration="8474000" />
       <workItem from="1571504603056" duration="2686000" />
       <workItem from="1571507931294" duration="3165000" />
-      <workItem from="1571554618449" duration="303000" />
+      <workItem from="1571554618449" duration="1181000" />
     </task>
     <servers />
   </component>
