@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
-import {AppBar, Box, Tab, Tabs, useTheme} from '@material-ui/core'
+import {AppBar, Tab, Tabs, useTheme} from '@material-ui/core'
 import SwipeableViews from 'react-swipeable-views'
 import Day from '../components/Day'
-import Copyright from '../components/Copyright'
 
 const subjects = [
   [
@@ -152,19 +151,11 @@ const subjects = [
   ]
 ];
 
-function TabPanel(props) {
-  const { children } = props;
-  return(
-      <Box>
-        {children}
-      </Box>
-  );
-}
-
 function TimetablePage() {
   const theme = useTheme();
   const date = new Date();
   let day = date.getDay();
+  // set Monday by default if isn't a weekend
   const activeDay = (day === 0 || day === 6) ? 0 : --day;
   const [value, setValue] = useState(activeDay);
 
@@ -198,32 +189,14 @@ function TimetablePage() {
             index={value}
             onChangeIndex={handleChangeIndex}
             style={{
-              height: '80vh'
+              height: '85vh'
             }}>
-          <TabPanel value={value} index={0} dir={theme.direction}>
-            <Day subjects={subjects[0]}/>
-          </TabPanel>
-          <TabPanel value={value} index={1} dir={theme.direction}>
-            <Day subjects={subjects[1]}/>
-          </TabPanel>
-          <TabPanel value={value} index={2} dir={theme.direction}>
-            <Day subjects={subjects[2]}/>
-          </TabPanel>
-          <TabPanel value={value} index={3} dir={theme.direction}>
-            <Day subjects={subjects[3]}/>
-          </TabPanel>
-          <TabPanel value={value} index={4} dir={theme.direction}>
-            <Day subjects={subjects[4]}/>
-          </TabPanel>
+          <Day subjects={subjects[0]}/>
+          <Day subjects={subjects[1]}/>
+          <Day subjects={subjects[2]}/>
+          <Day subjects={subjects[3]}/>
+          <Day subjects={subjects[4]}/>
         </SwipeableViews>
-        <Box style={{
-          width: '100%',
-          position: 'fixed',
-          bottom: '5vh',
-          textAlign: 'center'
-        }}>
-          <Copyright/>
-        </Box>
       </div>
   );
 }
