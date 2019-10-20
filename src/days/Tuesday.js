@@ -34,6 +34,14 @@ function Tuesday() {
       title: 'Теоретическая грамматика',
       cabinet: '208',
       teachers: 'Анциферова Л.В.'
+    },
+    {
+      id: '3',
+      startTime: '15:40',
+      endTime: '17:10',
+      title: 'Физическая культура / Практика',
+      cabinet: '',
+      teachers: 'Глинов В.П. / Аверкина А.В.'
     }
   ];
 
