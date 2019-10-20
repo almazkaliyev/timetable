@@ -5,6 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Day.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Day.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Subject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Subject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +37,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\almaz\projects\timetable\src\pages" />
+      <recent name="C:\Users\almaz\projects\timetable\public" />
       <recent name="C:\Users\almaz\projects\timetable\src\components" />
     </key>
   </component>
@@ -81,7 +87,9 @@
       <workItem from="1571507931294" duration="3165000" />
       <workItem from="1571554618449" duration="5840000" />
       <workItem from="1571560605738" duration="4011000" />
-      <workItem from="1571569811962" duration="244000" />
+      <workItem from="1571569811962" duration="2588000" />
+      <workItem from="1571573147159" duration="82000" />
+      <workItem from="1571591538293" duration="5135000" />
     </task>
     <servers />
   </component>

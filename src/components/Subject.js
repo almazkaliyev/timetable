@@ -4,7 +4,7 @@ import {Grid, Paper, makeStyles, Typography} from '@material-ui/core'
 const useStyles = makeStyles(theme =>({
   subjectPaper: {
     position: 'relative',
-    marginBottom: '8px',
+    marginBottom: '16px',
     padding: theme.spacing(2),
     overflow: 'hidden',
   },
@@ -13,11 +13,11 @@ const useStyles = makeStyles(theme =>({
       position: 'absolute',
       content: '""',
       display: 'block',
-      height: '200px',
+      height: '100%',
       width: '4px',
       top: '0',
       left: '0',
-      backgroundColor: theme.palette.primary.main,
+      background: 'linear-gradient(180deg, rgb(170,0,255) 0%, rgb(226,84,255) 50%, rgb(170,0,255) 100%)',
     }
   },
   container: {
@@ -37,7 +37,7 @@ function Subject({data}) {
   const classes = useStyles();
 
   return data.isActive ? (
-      <Paper className={`${classes.subjectPaper} ${classes.subjectActive}`}>
+      <Paper className={`${classes.subjectPaper} ${classes.subjectActive}`} elevation={5}>
         <Grid className={classes.container} container spacing={2}>
           <Grid item>
             <Typography variant="subtitle2">{data.startTime}</Typography>
@@ -51,7 +51,7 @@ function Subject({data}) {
         </Grid>
       </Paper>
   ) : (
-      <Paper className={`${classes.subjectPaper}`}>
+      <Paper className={`${classes.subjectPaper}`} elevation={5}>
         <Grid className={classes.container} container spacing={2}>
           <Grid item>
             <Typography variant="subtitle2">{data.startTime}</Typography>

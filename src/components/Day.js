@@ -4,7 +4,7 @@ import {Container, makeStyles, Typography} from '@material-ui/core'
 
 const useStyles = makeStyles({
   container: {
-    marginTop: '16px',
+    marginTop: '24px',
     marginBottom: '16px',
   },
   emptyContainer: {
