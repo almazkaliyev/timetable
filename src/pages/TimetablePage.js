@@ -36,6 +36,15 @@ const subjects = [
   [
     {
       id: '0',
+      startTime: '08:30',
+      endTime: '10:00',
+      title: 'Физическая культура (факультатив)',
+      cabinet: '',
+      teachers: 'Глинов В.П. / Аверкина А.В.',
+      isActive: false
+    },
+    {
+      id: '1',
       startTime: '10:10',
       endTime: '11:40',
       title: 'Практикум',
@@ -44,7 +53,7 @@ const subjects = [
       isActive: false
     },
     {
-      id: '1',
+      id: '2',
       startTime: '11:50',
       endTime: '13:20',
       title: 'МНПИ',
@@ -53,7 +62,7 @@ const subjects = [
       isActive: false
     },
     {
-      id: '2',
+      id: '3',
       startTime: '14:00',
       endTime: '15:30',
       title: 'Теоретическая грамматика',
@@ -62,7 +71,7 @@ const subjects = [
       isActive: false
     },
     {
-      id: '3',
+      id: '4',
       startTime: '15:40',
       endTime: '17:10',
       title: 'Физическая культура / Практика',
