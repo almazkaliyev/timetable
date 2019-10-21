@@ -25,7 +25,7 @@ function Day({subjects}) {
   ) : (
       <Container className={classes.container}>
         {subjects.map(subject => (
-            <Subject key={subject.id} data={subject} />
+            <Subject key={subject.id} subject={subject} />
         ))}
       </Container>
   );

@@ -33,34 +33,22 @@ const useStyles = makeStyles(theme =>({
   }
 }));
 
-function Subject({data}) {
+function Subject({subject}) {
   const classes = useStyles();
 
-  return data.isActive ? (
-      <Paper className={`${classes.subjectPaper} ${classes.subjectActive}`} elevation={5}>
+  return (
+      <Paper className={
+        subject.isActive ? `${classes.subjectPaper} ${classes.subjectActive}` : `${classes.subjectPaper}`
+      } elevation={5}>
         <Grid className={classes.container} container spacing={2}>
           <Grid item>
-            <Typography variant="subtitle2">{data.startTime}</Typography>
-            <Typography variant="subtitle2">{data.endTime}</Typography>
+            <Typography variant="subtitle2">{subject.startTime}</Typography>
+            <Typography variant="subtitle2">{subject.endTime}</Typography>
           </Grid>
           <Grid item className={classes.info}>
-            <Typography variant="h6" gutterBottom className={classes.title}>{data.title}</Typography>
-            <Typography variant="body2">{data.cabinet}</Typography>
-            <Typography variant="body2">{data.teachers}</Typography>
-          </Grid>
-        </Grid>
-      </Paper>
-  ) : (
-      <Paper className={`${classes.subjectPaper}`} elevation={5}>
-        <Grid className={classes.container} container spacing={2}>
-          <Grid item>
-            <Typography variant="subtitle2">{data.startTime}</Typography>
-            <Typography variant="subtitle2">{data.endTime}</Typography>
-          </Grid>
-          <Grid item className={classes.info}>
-            <Typography variant="h6" gutterBottom className={classes.title}>{data.title}</Typography>
-            <Typography variant="body2">{data.cabinet}</Typography>
-            <Typography variant="body2">{data.teachers}</Typography>
+            <Typography variant="h6" gutterBottom className={classes.title}>{subject.title}</Typography>
+            <Typography variant="body2">{subject.cabinet}</Typography>
+            <Typography variant="body2">{subject.teachers}</Typography>
           </Grid>
         </Grid>
       </Paper>
