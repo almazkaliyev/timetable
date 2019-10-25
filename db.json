@@ -2,116 +2,103 @@
   "monday" : [
     {
       "id": 0,
-      "startTime": "08:30",
-      "endTime": "10:00",
+      "start": "08:30",
+      "end": "10:00",
       "title": "Домашнее чтение",
       "cabinet": "208",
-      "teachers": "Анциферова Л.В. / Немилостева Е.Д.",
-      "isNow": false
+      "teachers": "Анциферова Л.В. / Немилостева Е.Д."
     },
     {
       "id": 1,
-      "startTime": "10:10",
-      "endTime": "11:40",
+      "start": "10:10",
+      "end": "11:40",
       "title": "Педагогика",
       "cabinet": "211",
-      "teachers": "Яровая Н.Л.",
-      "isNow": false
+      "teachers": "Яровая Н.Л."
     },
     {
       "id": 2,
-      "startTime": "11:50",
-      "endTime": "13:20",
+      "start": "11:50",
+      "end": "13:20",
       "title": "Этнопедагогика / Практика",
       "cabinet": "310",
-      "teachers": "Венгловская Н.С",
-      "isNow": false
+      "teachers": "Венгловская Н.С"
     }
   ],
   "tuesday" : [
     {
       "id": 0,
-      "startTime": "08:30",
-      "endTime": "10:00",
+      "start": "08:30",
+      "end": "10:00",
       "title": "Физическая культура (факультатив)",
       "cabinet": "",
-      "teachers": "Глинов В.П. / Аверкина А.В.",
-      "isNow": false
+      "teachers": "Глинов В.П. / Аверкина А.В."
     },
     {
       "id": 1,
-      "startTime": "10:10",
-      "endTime": "11:40",
+      "start": "10:10",
+      "end": "11:40",
       "title": "Практикум",
       "cabinet": "208 / 403",
-      "teachers": "Анциферова Л.В. / Бурумбаева А.М.",
-      "isNow": false
+      "teachers": "Анциферова Л.В. / Бурумбаева А.М."
     },
     {
       "id": 2,
-      "startTime": "11:50",
-      "endTime": "13:20",
+      "start": "11:50",
+      "end": "13:20",
       "title": "МНПИ",
       "cabinet": "405",
-      "teachers": "Бичун Л.В.",
-      "isNow": false
+      "teachers": "Бичун Л.В."
     },
     {
       "id": 3,
-      "startTime": "14:00",
-      "endTime": "15:30",
+      "start": "14:00",
+      "end": "15:30",
       "title": "Теоретическая грамматика",
       "cabinet": "208",
-      "teachers": "Анциферова Л.В.",
-      "isNow": false
+      "teachers": "Анциферова Л.В."
     },
     {
       "id": 4,
-      "startTime": "15:40",
-      "endTime": "17:10",
+      "start": "15:40",
+      "end": "17:10",
       "title": "Физическая культура / Практика",
       "cabinet": "",
-      "teachers": "Глинов В.П. / Аверкина А.В.",
-      "isNow": false
+      "teachers": "Глинов В.П. / Аверкина А.В."
     }
   ],
   "wednesday" : [
     {
       "id": 0,
-      "startTime": "08:30",
-      "endTime": "10:00",
+      "start": "08:30",
+      "end": "10:00",
       "title": "Психология / МНПИ",
       "cabinet": "303 / 303",
-      "teachers": "Виссарионова Е.Н. / Бичун Л.В.",
-      "isNow": false
+      "teachers": "Виссарионова Е.Н. / Бичун Л.В."
     },
     {
       "id": 1,
-      "startTime": "10:10",
-      "endTime": "11:40",
+      "start": "10:10",
+      "end": "11:40",
       "title": "Методика иностранного языка",
       "cabinet": "302 / 303",
-      "teachers": "Немилостева Е.Д.",
-      "isNow": false
+      "teachers": "Немилостева Е.Д."
     },
     {
       "id": 2,
-      "startTime": "11:50",
-      "endTime": "13:20",
+      "start": "11:50",
+      "end": "13:20",
       "title": "Этнопедагогика",
       "cabinet": "26",
-      "teachers": "Венгловская Н.С",
-      "isNow": false
-    }
-  ,
+      "teachers": "Венгловская Н.С"
+    },
     {
       "id": 3,
-      "startTime": "14:00",
-      "endTime": "15:30",
+      "start": "14:00",
+      "end": "15:30",
       "title": "Практикум",
       "cabinet": "",
-      "teachers": "Анциферова Л.В. / Бурумбаева А.М.",
-      "isNow": false
+      "teachers": "Анциферова Л.В. / Бурумбаева А.М."
     }
   ],
   "thursday" : [
@@ -120,39 +107,35 @@
   "friday" : [
     {
       "id": 0,
-      "startTime": "08:30",
-      "endTime": "10:00",
+      "start": "08:30",
+      "end": "10:00",
       "title": "Родной язык в начальной школе",
       "cabinet": "302",
-      "teachers": "Хильченко О.А.",
-      "isNow": false
+      "teachers": "Хильченко О.А."
     },
     {
       "id": 1,
-      "startTime": "10:05",
-      "endTime": "10:35",
+      "start": "10:05",
+      "end": "10:35",
       "title": "Кураторский час",
       "cabinet": "",
-      "teachers": "",
-      "isNow": false
+      "teachers": ""
     },
     {
       "id": 2,
-      "startTime": "10:40",
-      "endTime": "12:20",
+      "start": "10:40",
+      "end": "12:20",
       "title": "Практическая грамматика",
       "cabinet": "208 / 403",
-      "teachers": "Анциферова Л.В. / Бурумбаева А.М.",
-      "isNow": false
+      "teachers": "Анциферова Л.В. / Бурумбаева А.М."
     },
     {
       "id": 3,
-      "startTime": "12:30",
-      "endTime": "14:00",
+      "start": "12:30",
+      "end": "14:00",
       "title": "Делопроизводство",
       "cabinet": "29",
-      "teachers": "Кусаинова А.Б.",
-      "isNow": false
+      "teachers": "Кусаинова А.Б."
     }
   ]
 }
