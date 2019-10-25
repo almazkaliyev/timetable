@@ -33,17 +33,17 @@ const useStyles = makeStyles(theme =>({
   }
 }));
 
-function Subject({subject}) {
+function Subject({subject, isCurrent}) {
   const classes = useStyles();
 
   return (
       <Paper className={
-        subject.isActive ? `${classes.subjectPaper} ${classes.subjectActive}` : `${classes.subjectPaper}`
+        isCurrent ? `${classes.subjectPaper} ${classes.subjectActive}` : `${classes.subjectPaper}`
       } elevation={5}>
         <Grid className={classes.container} container spacing={2}>
           <Grid item>
-            <Typography variant="subtitle2">{subject.startTime}</Typography>
-            <Typography variant="subtitle2">{subject.endTime}</Typography>
+            <Typography variant="subtitle2">{subject.start}</Typography>
+            <Typography variant="subtitle2">{subject.end}</Typography>
           </Grid>
           <Grid item className={classes.info}>
             <Typography variant="h6" gutterBottom className={classes.title}>{subject.title}</Typography>

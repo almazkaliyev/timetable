@@ -13,10 +13,10 @@ const useStyles = makeStyles({
   }
 });
 
-function Day({subjects}) {
+function Day({data: subjects}) {
   const classes = useStyles();
 
-  return subjects === null ? (
+  return subjects.length === 0 ? (
       <Container className={classes.emptyContainer}>
         <Typography variant='h6'>
           Пар нет
@@ -25,7 +25,7 @@ function Day({subjects}) {
   ) : (
       <Container className={classes.container}>
         {subjects.map(subject => (
-            <Subject key={subject.id} subject={subject} />
+            <Subject key={subject.id} subject={subject} isCurrent={false}/>
         ))}
       </Container>
   );
