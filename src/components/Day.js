@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Subject from './Subject'
 import {Container, makeStyles, Typography} from '@material-ui/core'
 
@@ -13,8 +13,21 @@ const useStyles = makeStyles({
   }
 });
 
-function Day({data: subjects}) {
+function Day({data: subjects, isToday}) {
   const classes = useStyles();
+
+  function checkTime(start, end) {
+    let s = 60;
+    let d = ':';
+    let b = start.split(d);
+    b = b[0] * s * s + b[1] * s;
+    let e = end.split(d);
+    e = e[0] * s * s + e[1] * s;
+    let t = new Date();
+    t = t.getHours() * s * s + t.getMinutes() * s;
+
+    return (t >= b && t <= e);
+  }
 
   return subjects.length === 0 ? (
       <Container className={classes.emptyContainer}>
@@ -24,9 +37,12 @@ function Day({data: subjects}) {
       </Container>
   ) : (
       <Container className={classes.container}>
-        {subjects.map(subject => (
-            <Subject key={subject.id} subject={subject} isCurrent={false}/>
-        ))}
+        {subjects.map(subject => {
+          let res = checkTime(subject.start, subject.end) && isToday;
+          return (
+            <Subject key={subject.id} subject={subject} isCurrent={res}/>
+          )
+        })}
       </Container>
   );
 }

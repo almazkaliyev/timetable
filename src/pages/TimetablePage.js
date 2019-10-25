@@ -17,9 +17,9 @@ function TimetablePage() {
   const classes = useStyles();
   const theme = useTheme();
   const date = new Date();
-  let day = date.getDay();
-  const activeDay = (day === 0 || day === 6) ? 0 : --day;
-  const [value, setValue] = useState(activeDay);
+  let today = date.getDay();
+  const day = (today === 0 || today === 6) ? 0 : --today;
+  const [value, setValue] = useState(day);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -74,11 +74,11 @@ function TimetablePage() {
             axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
             index={value}
             onChangeIndex={handleChangeIndex}>
-          <Day data={subjects.monday}/>
-          <Day data={subjects.tuesday}/>
-          <Day data={subjects.wednesday}/>
-          <Day data={subjects.thursday}/>
-          <Day data={subjects.friday}/>
+          <Day data={subjects.monday} isToday={day === 0}/>
+          <Day data={subjects.tuesday} isToday={day === 1}/>
+          <Day data={subjects.wednesday} isToday={day === 2}/>
+          <Day data={subjects.thursday} isToday={day === 3}/>
+          <Day data={subjects.friday} isToday={day === 4}/>
         </SwipeableViews>
       </div>
   )
