@@ -32,7 +32,7 @@ const styles = theme => ({
     width: '100%',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    padding: theme.spacing(1)
+    marginTop: theme.spacing(1),
   },
   loading: {
     alignItems: 'center',

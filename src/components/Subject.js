@@ -31,7 +31,7 @@ const styles = theme => ({
     position: 'relative',
     padding: theme.spacing(2),
     overflowX: 'hidden',
-    marginBottom: theme.spacing(1),
+    margin: theme.spacing(1),
   },
   subjectActive: {
     '&::before': {
