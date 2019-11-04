@@ -28,17 +28,17 @@ const Schedule = ({ ...props }) => {
 const styles = theme => ({
   container: {
     display: 'flex',
+    marginTop: theme.spacing(0.5),
     width: '100%',
-    minHeight: `calc(100vh - 48px - ${theme.spacing(1)}px)`,
+    minHeight: `calc(100vh - 48px - ${theme.spacing(0.5)}px)`,
     justifyContent: 'center',
     alignItems: 'flex-start',
-    marginTop: theme.spacing(1),
   },
   loading: {
     alignItems: 'center',
   },
   swipeContainer: {
-    minHeight: `calc(100vh - 48px - ${theme.spacing(1)}px)`,
+    minHeight: `calc(100vh - 48px - ${theme.spacing(0.5)}px)`,
   }
 });
 
