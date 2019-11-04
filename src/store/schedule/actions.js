@@ -26,9 +26,9 @@ export const fetchSchedule = () => {
   }
 };
 
-export const changeIndex = (value) => {
+export const changeIndex = (index) => {
   return {
     type: SCHEDULE_CHANGE_INDEX,
-    index: value
+    payload: index
   }
 };

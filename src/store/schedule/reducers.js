@@ -32,7 +32,7 @@ export default function scheduleReducer(state = initialState, action = {}) {
     case SCHEDULE_CHANGE_INDEX:
       return {
         ...state,
-        index: action.index
+        index: action.payload
       };
     default:
       return state;
