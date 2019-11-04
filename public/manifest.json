@@ -1,6 +1,6 @@
 {
-  "short_name": "Расписание пар",
-  "name": "Расписание пар",
+  "short_name": "Sunshine",
+  "name": "Sunshine Schedule",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +19,7 @@
     }
   ],
   "start_url": ".",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#aa00ff",
   "background_color": "#121212"
 }

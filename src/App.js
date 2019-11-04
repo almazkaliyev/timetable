@@ -1,9 +1,13 @@
-import React from 'react'
-import TimetablePage from './pages/TimetablePage'
+import React from 'react';
+import HeaderContainer from './containers/HeaderContainer';
+import ScheduleContainer from './containers/ScheduleContainer';
 
 function App() {
   return (
-    <TimetablePage/>
+    <div>
+      <HeaderContainer/>
+      <ScheduleContainer/>
+    </div>
   )
 }
 

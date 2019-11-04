@@ -1,14 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import {CssBaseline, MuiThemeProvider} from '@material-ui/core'
-import theme from './theme'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { MuiThemeProvider } from '@material-ui/core';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import App from './App';
+import theme from './theme';
+import store from './store/store'
 
 ReactDOM.render(
     <MuiThemeProvider theme={theme}>
-      <CssBaseline />
-      <App />
+      <CssBaseline/>
+      <Provider store={store}>
+        <App/>
+      </Provider>
     </MuiThemeProvider>,
     document.getElementById('root')
 );

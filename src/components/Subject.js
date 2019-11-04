@@ -1,58 +1,56 @@
-import React from 'react'
-import {Grid, makeStyles, Paper, Typography} from '@material-ui/core'
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core';
 
-const useStyles = makeStyles(theme =>({
-  subjectPaper: {
-    position: 'relative',
-    marginBottom: '16px',
-    padding: theme.spacing(2),
-    overflow: 'hidden',
-  },
-  subjectActive: {
-    '&::before': {
-      position: 'absolute',
-      content: '""',
-      display: 'block',
-      height: '100%',
-      width: '4px',
-      top: '0',
-      left: '0',
-      background: 'linear-gradient(180deg, rgb(170,0,255) 0%, rgb(226,84,255) 50%, rgb(170,0,255) 100%)',
-    }
-  },
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-  },
-  info: {
-    maxWidth: '70vw',
-  },
-  title: {
-    wordWrap: 'break-word',
-  }
-}));
-
-function Subject({subject, isCurrent}) {
-  const classes = useStyles();
+const Subject = ({ ...props }) => {
+  const { classes, subject, isCurrent } = props;
 
   return (
-      <Paper className={
-        isCurrent ? `${classes.subjectPaper} ${classes.subjectActive}` : `${classes.subjectPaper}`
-      } elevation={5}>
-        <Grid className={classes.container} container spacing={2}>
+      <Paper className={isCurrent ? `${classes.subject} ${classes.subjectActive}` : `${classes.subject}`}>
+        <Grid container spacing={2} alignItems="center">
           <Grid item>
             <Typography variant="subtitle2">{subject.start}</Typography>
             <Typography variant="subtitle2">{subject.end}</Typography>
           </Grid>
           <Grid item className={classes.info}>
-            <Typography variant="h6" gutterBottom className={classes.title}>{subject.title}</Typography>
-            <Typography variant="body2">{subject.cabinet}</Typography>
-            <Typography variant="body2">{subject.teachers}</Typography>
+            <Typography variant="h6" className={classes.name}>{subject.title}</Typography>
+            <Typography variant="subtitle2">{subject.cabinet}</Typography>
+            <Typography variant="subtitle2">{subject.teachers}</Typography>
           </Grid>
         </Grid>
       </Paper>
   )
-}
+};
 
-export default Subject
+const styles = theme => ({
+  subject: {
+    display: 'flex',
+    alignItems: 'center',
+    position: 'relative',
+    padding: theme.spacing(2),
+    overflowX: 'hidden',
+    marginBottom: theme.spacing(1),
+  },
+  subjectActive: {
+    '&::before': {
+      content: '""',
+      position: 'absolute',
+      display: 'block',
+      height: '100%',
+      width: '4px',
+      top: '0',
+      left: '0',
+      backgroundColor: theme.palette.primary.main,
+    }
+  },
+  info: {
+    maxWidth: '70vw',
+  },
+  name: {
+    wordWrap: 'break-word',
+  }
+});
+
+export default withStyles(styles)(Subject)
