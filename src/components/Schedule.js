@@ -14,7 +14,7 @@ const Schedule = ({ ...props }) => {
           </div>
       ) : (
           <div className={classes.container}>
-            <SwipeableViews index={index} onChangeIndex={onChangeIndex}>
+            <SwipeableViews className={classes.swipeContainer} index={index} onChangeIndex={onChangeIndex}>
               <SubjectsList subjects={subjects.monday}/>
               <SubjectsList subjects={subjects.tuesday}/>
               <SubjectsList subjects={subjects.wednesday}/>
@@ -28,7 +28,6 @@ const Schedule = ({ ...props }) => {
 const styles = theme => ({
   container: {
     display: 'flex',
-    minHeight: 'calc(100vh - 48px)',
     width: '100%',
     justifyContent: 'center',
     alignItems: 'flex-start',
@@ -36,6 +35,9 @@ const styles = theme => ({
   },
   loading: {
     alignItems: 'center',
+  },
+  swipeContainer: {
+    minHeight: `calc(100vh - 48px - ${theme.spacing(1)}px)`,
   }
 });
 
