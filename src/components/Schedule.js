@@ -1,7 +1,7 @@
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import SubjectsList from './SubjectsList';
-import CircularProgress from "@material-ui/core/CircularProgress";
+import CircularProgress from '@material-ui/core/CircularProgress';
 import { withStyles } from '@material-ui/core';
 
 const Schedule = ({ ...props }) => {
@@ -29,6 +29,7 @@ const styles = theme => ({
   container: {
     display: 'flex',
     width: '100%',
+    minHeight: `calc(100vh - 48px - ${theme.spacing(1)}px)`,
     justifyContent: 'center',
     alignItems: 'flex-start',
     marginTop: theme.spacing(1),
