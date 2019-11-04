@@ -5,7 +5,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import { withStyles } from '@material-ui/core';
 
 const Schedule = ({ ...props }) => {
-  const { classes, loading, subjects, index } = props;
+  const { classes, loading, subjects, index, onChangeIndex } = props;
 
   return loading
       ? (
@@ -14,7 +14,7 @@ const Schedule = ({ ...props }) => {
           </div>
       ) : (
           <div className={classes.container}>
-            <SwipeableViews index={index}>
+            <SwipeableViews index={index} onChangeIndex={onChangeIndex}>
               <SubjectsList subjects={subjects.monday}/>
               <SubjectsList subjects={subjects.tuesday}/>
               <SubjectsList subjects={subjects.wednesday}/>
