@@ -4,24 +4,28 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core';
 
-const Subject = ({ ...props }) => {
-  const { classes, subject, isCurrent } = props;
+const Subject = ({ subject: { start, end, title, cabinet, teachers }, isCurrent, ...props }) => {
+  const { classes } = props;
 
   return (
-      <Paper className={isCurrent ? `${classes.subject} ${classes.subjectActive}` : `${classes.subject}`}>
-        <Grid container spacing={2} alignItems="center">
-          <Grid item>
-            <Typography variant="subtitle2">{subject.start}</Typography>
-            <Typography variant="subtitle2">{subject.end}</Typography>
-          </Grid>
-          <Grid item className={classes.info}>
-            <Typography variant="h6" className={classes.name}>{subject.title}</Typography>
-            <Typography variant="subtitle2">{subject.cabinet}</Typography>
-            <Typography variant="subtitle2">{subject.teachers}</Typography>
-          </Grid>
+    <Paper
+      className={isCurrent ? `${classes.subject} ${classes.subjectActive}` : `${classes.subject}`}
+    >
+      <Grid container spacing={2} alignItems="center">
+        <Grid item>
+          <Typography variant="subtitle2">{start}</Typography>
+          <Typography variant="subtitle2">{end}</Typography>
         </Grid>
-      </Paper>
-  )
+        <Grid item className={classes.info}>
+          <Typography variant="h6" className={classes.name}>
+            {title}
+          </Typography>
+          <Typography variant="subtitle2">{cabinet}</Typography>
+          <Typography variant="subtitle2">{teachers}</Typography>
+        </Grid>
+      </Grid>
+    </Paper>
+  );
 };
 
 const styles = theme => ({
@@ -43,14 +47,14 @@ const styles = theme => ({
       top: '0',
       left: '0',
       backgroundColor: theme.palette.primary.main,
-    }
+    },
   },
   info: {
     maxWidth: '70vw',
   },
   name: {
     wordWrap: 'break-word',
-  }
+  },
 });
 
-export default withStyles(styles)(Subject)
+export default withStyles(styles)(Subject);

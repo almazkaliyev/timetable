@@ -5,14 +5,14 @@ import { MuiThemeProvider } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import App from './App';
 import theme from './theme';
-import store from './store/store'
+import store from './store/store';
 
 ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
-      <CssBaseline/>
-      <Provider store={store}>
-        <App/>
-      </Provider>
-    </MuiThemeProvider>,
-    document.getElementById('root')
+  <MuiThemeProvider theme={theme}>
+    <CssBaseline />
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </MuiThemeProvider>,
+  document.getElementById('root'),
 );

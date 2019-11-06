@@ -1,28 +1,37 @@
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
-import SubjectsList from './SubjectsList';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { withStyles } from '@material-ui/core';
+import SubjectsList from './SubjectsList';
 
-const Schedule = ({ ...props }) => {
-  const { classes, loading, subjects, index, onChangeIndex } = props;
+const Schedule = ({
+  loading,
+  subjects: { monday, tuesday, wednesday, thursday, friday },
+  index,
+  onChangeIndex,
+  ...props
+}) => {
+  const { classes } = props;
 
-  return loading
-      ? (
-          <div className={`${classes.container} ${classes.loading}`}>
-            <CircularProgress/>
-          </div>
-      ) : (
-          <div className={classes.container}>
-            <SwipeableViews className={classes.swipeContainer} index={index} onChangeIndex={onChangeIndex}>
-              <SubjectsList subjects={subjects.monday}/>
-              <SubjectsList subjects={subjects.tuesday}/>
-              <SubjectsList subjects={subjects.wednesday}/>
-              <SubjectsList subjects={subjects.thursday}/>
-              <SubjectsList subjects={subjects.friday}/>
-            </SwipeableViews>
-          </div>
-      )
+  return loading ? (
+    <div className={`${classes.container} ${classes.loading}`}>
+      <CircularProgress />
+    </div>
+  ) : (
+    <div className={classes.container}>
+      <SwipeableViews
+        className={classes.swipeContainer}
+        index={index}
+        onChangeIndex={onChangeIndex}
+      >
+        <SubjectsList subjects={monday} />
+        <SubjectsList subjects={tuesday} />
+        <SubjectsList subjects={wednesday} />
+        <SubjectsList subjects={thursday} />
+        <SubjectsList subjects={friday} />
+      </SwipeableViews>
+    </div>
+  );
 };
 
 const styles = theme => ({
@@ -39,7 +48,7 @@ const styles = theme => ({
   },
   swipeContainer: {
     minHeight: `calc(100vh - 48px - ${theme.spacing(0.5)}px)`,
-  }
+  },
 });
 
-export default withStyles(styles)(Schedule)
+export default withStyles(styles)(Schedule);

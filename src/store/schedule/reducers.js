@@ -1,8 +1,4 @@
-import {
-  SCHEDULE_REQUEST,
-  SCHEDULE_SUCCESS,
-  SCHEDULE_CHANGE_INDEX
-} from './actions';
+import { SCHEDULE_REQUEST, SCHEDULE_SUCCESS, SCHEDULE_SET_INDEX } from './actions';
 
 const initialState = {
   schedule: {
@@ -10,10 +6,10 @@ const initialState = {
     tuesday: [],
     wednesday: [],
     thursday: [],
-    friday: []
+    friday: [],
   },
   loading: false,
-  index: 0
+  index: 0,
 };
 
 export default function scheduleReducer(state = initialState, action = {}) {
@@ -27,14 +23,14 @@ export default function scheduleReducer(state = initialState, action = {}) {
       return {
         ...state,
         loading: false,
-        schedule: action.payload
+        schedule: action.payload,
       };
-    case SCHEDULE_CHANGE_INDEX:
+    case SCHEDULE_SET_INDEX:
       return {
         ...state,
-        index: action.payload
+        index: action.payload,
       };
     default:
       return state;
   }
-};
+}

@@ -5,10 +5,10 @@ import ScheduleContainer from './containers/ScheduleContainer';
 function App() {
   return (
     <div>
-      <HeaderContainer/>
-      <ScheduleContainer/>
+      <HeaderContainer />
+      <ScheduleContainer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
