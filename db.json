@@ -116,6 +116,62 @@
   "thursday" : [
     {
       "id": 0,
+      "start": "08:15",
+      "end": "8:55",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 1,
+      "start": "09:00",
+      "end": "09:40",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 2,
+      "start": "09:45",
+      "end": "10:25",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 3,
+      "start": "10:40",
+      "end": "11:20",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 4,
+      "start": "11:35",
+      "end": "12:15",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 5,
+      "start": "12:20",
+      "end": "13:00",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 6,
+      "start": "14:00",
+      "end": "14:40",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 7,
       "start": "14:45",
       "end": "15:25",
       "title": "",
@@ -123,7 +179,7 @@
       "teachers": ""
     },
     {
-      "id": 1,
+      "id": 8,
       "start": "15:30",
       "end": "16:10",
       "title": "",
@@ -131,9 +187,25 @@
       "teachers": ""
     },
     {
-      "id": 2,
+      "id": 9,
       "start": "16:25",
       "end": "17:05",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 10,
+      "start": "17:10",
+      "end": "17:50",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 11,
+      "start": "17:55",
+      "end": "18:35",
       "title": "",
       "cabinet": "",
       "teachers": ""
