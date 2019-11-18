@@ -18,11 +18,23 @@
     },
     {
       "id": 2,
+      "day": "monday",
       "start": "11:50",
       "end": "13:20",
-      "title": "Этнопедагогика / Практика",
-      "cabinet": "310",
-      "teachers": "Венгловская Н.С"
+      "title": "Психология",
+      "cabinet": "303",
+      "teachers": "Виссарионова Е.Н.",
+      "isNow": false
+    },
+    {
+      "id": 3,
+      "day": "monday",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Психология",
+      "cabinet": "303",
+      "teachers": "Виссарионова Е.Н.",
+      "isNow": false
     }
   ],
   "tuesday" : [
@@ -102,7 +114,30 @@
     }
   ],
   "thursday" : [
-
+    {
+      "id": 0,
+      "start": "14:45",
+      "end": "15:25",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 1,
+      "start": "15:30",
+      "end": "16:10",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 2,
+      "start": "16:25",
+      "end": "17:05",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    }
   ],
   "friday" : [
     {
