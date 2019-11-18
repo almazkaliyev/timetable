@@ -1,24 +1,20 @@
 {
-  "schedule" : [
+  "monday" : [
     {
       "id": 0,
-      "day":"monday",
       "start": "08:30",
       "end": "10:00",
       "title": "Домашнее чтение",
       "cabinet": "208",
-      "teachers": "Анциферова Л.В. / Немилостева Е.Д.",
-      "isNow": false
+      "teachers": "Анциферова Л.В. / Немилостева Е.Д."
     },
     {
       "id": 1,
-      "day": "monday",
       "start": "10:10",
       "end": "11:40",
       "title": "Педагогика",
       "cabinet": "211",
-      "teachers": "Яровая Н.Л.",
-      "isNow": false
+      "teachers": "Яровая Н.Л."
     },
     {
       "id": 2,
@@ -39,166 +35,150 @@
       "cabinet": "303",
       "teachers": "Виссарионова Е.Н.",
       "isNow": false
+    }
+  ],
+  "tuesday" : [
+    {
+      "id": 0,
+      "start": "08:30",
+      "end": "10:00",
+      "title": "Физическая культура (факультатив)",
+      "cabinet": "",
+      "teachers": "Глинов В.П. / Аверкина А.В."
     },
     {
-      "id": 4,
-      "day": "tuesday",
+      "id": 1,
       "start": "10:10",
       "end": "11:40",
       "title": "Практикум",
       "cabinet": "208 / 403",
-      "teachers": "Анциферова Л.В. / Бурумбаева А.М.",
-      "isNow": false
+      "teachers": "Анциферова Л.В. / Бурумбаева А.М."
     },
     {
-      "id": 5,
-      "day": "tuesday",
+      "id": 2,
       "start": "11:50",
       "end": "13:20",
-      "title": "МНПИ",
-      "cabinet": "303",
-      "teachers": "Бичун Л.В.",
-      "isNow": false
+      "title": "Делопроизводство",
+      "cabinet": "29",
+      "teachers": "Кусаинова А.Б."
     },
     {
-      "id": 6,
-      "day": "tuesday",
+      "id": 3,
       "start": "14:00",
       "end": "15:30",
       "title": "Теоретическая грамматика",
       "cabinet": "208",
-      "teachers": "Анциферова Л.В.",
-      "isNow": false
+      "teachers": "Анциферова Л.В."
     },
     {
-      "id": 7,
-      "day": "tuesday",
+      "id": 4,
       "start": "15:40",
       "end": "17:10",
-      "title": "Физическая культура",
+      "title": "Физическая культура / Здоровье (факультатив)",
       "cabinet": "",
-      "teachers": "Глинов В.П. / Аверкина А.В.",
-      "isNow": false
-    },
+      "teachers": "Глинов В.П. / Аверкина А.В."
+    }
+  ],
+  "wednesday" : [
     {
-      "id": 8,
-      "day": "wednesday",
+      "id": 0,
       "start": "08:30",
       "end": "10:00",
       "title": "Психология / МНПИ",
       "cabinet": "303 / 303",
-      "teachers": "Виссарионова Е.Н. / Бичун Л.В.",
-      "isNow": false
+      "teachers": "Виссарионова Е.Н. / Бичун Л.В."
     },
     {
-      "id": 9,
-      "day": "wednesday",
+      "id": 1,
       "start": "10:10",
       "end": "11:40",
       "title": "Методика иностранного языка",
       "cabinet": "302 / 303",
-      "teachers": "Немилостева Е.Д.",
-      "isNow": false
+      "teachers": "Немилостева Е.Д."
     },
     {
-      "id": 10,
-      "day": "wednesday",
+      "id": 2,
       "start": "11:50",
       "end": "13:20",
       "title": "Этнопедагогика",
       "cabinet": "26",
-      "teachers": "Венгловская Н.С",
-      "isNow": false
+      "teachers": "Венгловская Н.С"
     },
     {
-      "id": 11,
-      "day": "wednesday",
+      "id": 3,
       "start": "14:00",
       "end": "15:30",
       "title": "Практикум",
       "cabinet": "",
-      "teachers": "Анциферова Л.В. / Бурумбаева А.М.",
-      "isNow": false
-    },
+      "teachers": "Анциферова Л.В. / Бурумбаева А.М."
+    }
+  ],
+  "thursday" : [
     {
-      "id": 12,
-      "day": "thursday",
+      "id": 0,
       "start": "14:45",
       "end": "15:25",
       "title": "",
       "cabinet": "",
-      "teachers": "",
-      "isNow": false
+      "teachers": ""
     },
     {
-      "id": 13,
-      "day": "thursday",
+      "id": 1,
       "start": "15:30",
       "end": "16:10",
       "title": "",
       "cabinet": "",
-      "teachers": "",
-      "isNow": false
+      "teachers": ""
     },
     {
-      "id": 14,
-      "day": "thursday",
+      "id": 2,
       "start": "16:25",
       "end": "17:05",
       "title": "",
       "cabinet": "",
-      "teachers": "",
-      "isNow": false
-    },
+      "teachers": ""
+    }
+  ],
+  "friday" : [
     {
-      "id": 15,
-      "day": "friday",
+      "id": 0,
       "start": "08:30",
       "end": "10:00",
       "title": "Родной язык в начальной школе",
       "cabinet": "302",
-      "teachers": "Хильченко О.А.",
-      "isNow": false
+      "teachers": "Хильченко О.А."
     },
     {
-      "id": 16,
-      "day":  "friday",
+      "id": 1,
       "start": "10:05",
       "end": "10:35",
       "title": "Кураторский час",
       "cabinet": "",
-      "teachers": "",
-      "isNow": false
+      "teachers": ""
     },
     {
-      "id": 17,
-      "day":  "friday",
+      "id": 2,
       "start": "10:40",
       "end": "12:20",
       "title": "Практическая грамматика",
       "cabinet": "208 / 403",
-      "teachers": "Анциферова Л.В. / Бурумбаева А.М.",
-      "isNow": false
+      "teachers": "Анциферова Л.В. / Бурумбаева А.М."
     },
     {
-      "id": 18,
-      "day":  "friday",
+      "id": 3,
       "start": "12:30",
       "end": "14:00",
       "title": "Делопроизводство",
       "cabinet": "29",
-      "teachers": "Кусаинова А.Б.",
-      "isNow": false
+      "teachers": "Кусаинова А.Б."
     },
     {
-      "id": 19,
-      "day":  "friday",
+      "id": 4,
       "start": "14:10",
       "end": "15:40",
       "title": "Критериальное оценивание (факультатив)",
       "cabinet": "",
-      "teachers": "Андреева О.С.",
-      "isNow": false
+      "teachers": "Андреева О.С."
     }
   ]
 }
