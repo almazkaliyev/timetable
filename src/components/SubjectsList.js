@@ -1,17 +1,24 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core';
+import { inTimeRange, isToday } from '../utils/Time';
 import Subject from './Subject';
 
-const SubjectList = ({ subjects, ...props }) => {
+const SubjectList = ({ subjects, index, ...props }) => {
   const { classes } = props;
 
   return subjects.length === 0 ? (
     <span className={classes.empty}>Пар нет</span>
   ) : (
     <div>
-      {subjects.map(subject => (
-        <Subject key={subject.id} subject={subject} />
-      ))}
+      {subjects.map(subject => {
+        return (
+          <Subject
+            key={subject.id}
+            subject={subject}
+            isNow={inTimeRange(subject.start, subject.end) && isToday(index + 1)}
+          />
+        );
+      })}
     </div>
   );
 };

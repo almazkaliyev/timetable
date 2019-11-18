@@ -4,13 +4,11 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core';
 
-const Subject = ({ subject: { start, end, title, cabinet, teachers }, isCurrent, ...props }) => {
+const Subject = ({ subject: { start, end, title, cabinet, teachers }, isNow, ...props }) => {
   const { classes } = props;
 
   return (
-    <Paper
-      className={isCurrent ? `${classes.subject} ${classes.subjectActive}` : `${classes.subject}`}
-    >
+    <Paper className={isNow ? `${classes.subject} ${classes.subjectActive}` : `${classes.subject}`}>
       <Grid container spacing={2} alignItems="center">
         <Grid item>
           <Typography variant="subtitle2">{start}</Typography>
