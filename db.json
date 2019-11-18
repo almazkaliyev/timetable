@@ -1,7 +1,8 @@
 {
-  "monday" : [
+  "schedule" : [
     {
       "id": 0,
+      "day":"monday",
       "start": "08:30",
       "end": "10:00",
       "title": "Домашнее чтение",
@@ -11,6 +12,7 @@
     },
     {
       "id": 1,
+      "day": "monday",
       "start": "10:10",
       "end": "11:40",
       "title": "Педагогика",
@@ -20,6 +22,7 @@
     },
     {
       "id": 2,
+      "day": "monday",
       "start": "11:50",
       "end": "13:20",
       "title": "Психология",
@@ -29,17 +32,17 @@
     },
     {
       "id": 3,
+      "day": "monday",
       "start": "14:00",
       "end": "15:30",
       "title": "Психология",
       "cabinet": "303",
       "teachers": "Виссарионова Е.Н.",
       "isNow": false
-    }
-  ],
-  "tuesday" : [
+    },
     {
-      "id": 0,
+      "id": 4,
+      "day": "tuesday",
       "start": "10:10",
       "end": "11:40",
       "title": "Практикум",
@@ -48,7 +51,8 @@
       "isNow": false
     },
     {
-      "id": 1,
+      "id": 5,
+      "day": "tuesday",
       "start": "11:50",
       "end": "13:20",
       "title": "МНПИ",
@@ -57,7 +61,8 @@
       "isNow": false
     },
     {
-      "id": 2,
+      "id": 6,
+      "day": "tuesday",
       "start": "14:00",
       "end": "15:30",
       "title": "Теоретическая грамматика",
@@ -66,18 +71,18 @@
       "isNow": false
     },
     {
-      "id": 3,
+      "id": 7,
+      "day": "tuesday",
       "start": "15:40",
       "end": "17:10",
       "title": "Физическая культура",
       "cabinet": "",
       "teachers": "Глинов В.П. / Аверкина А.В.",
       "isNow": false
-    }
-  ],
-  "wednesday" : [
+    },
     {
-      "id": 0,
+      "id": 8,
+      "day": "wednesday",
       "start": "08:30",
       "end": "10:00",
       "title": "Психология / МНПИ",
@@ -86,7 +91,8 @@
       "isNow": false
     },
     {
-      "id": 1,
+      "id": 9,
+      "day": "wednesday",
       "start": "10:10",
       "end": "11:40",
       "title": "Методика иностранного языка",
@@ -95,7 +101,8 @@
       "isNow": false
     },
     {
-      "id": 2,
+      "id": 10,
+      "day": "wednesday",
       "start": "11:50",
       "end": "13:20",
       "title": "Этнопедагогика",
@@ -104,18 +111,18 @@
       "isNow": false
     },
     {
-      "id": 3,
+      "id": 11,
+      "day": "wednesday",
       "start": "14:00",
       "end": "15:30",
       "title": "Практикум",
       "cabinet": "",
       "teachers": "Анциферова Л.В. / Бурумбаева А.М.",
       "isNow": false
-    }
-  ],
-  "thursday" : [
+    },
     {
-      "id": 0,
+      "id": 12,
+      "day": "thursday",
       "start": "2 урок",
       "end": "2 смена",
       "title": "Абжанова Айдана",
@@ -124,7 +131,8 @@
       "isNow": false
     },
     {
-      "id": 1,
+      "id": 13,
+      "day": "thursday",
       "start": "3 урок",
       "end": "2 смена",
       "title": "Агибаева Анель",
@@ -133,18 +141,18 @@
       "isNow": false
     },
     {
-      "id": 2,
+      "id": 14,
+      "day": "thursday",
       "start": "4 урок",
       "end": "2 смена",
       "title": "Алпыспаева Асель",
       "cabinet": "Литературное чтение",
       "teachers": "4В",
       "isNow": false
-    }
-  ],
-  "friday" : [
+    },
     {
-      "id": 0,
+      "id": 15,
+      "day": "friday",
       "start": "08:30",
       "end": "10:00",
       "title": "Родной язык в начальной школе",
@@ -153,7 +161,8 @@
       "isNow": false
     },
     {
-      "id": 1,
+      "id": 16,
+      "day":  "friday",
       "start": "10:05",
       "end": "10:35",
       "title": "Кураторский час",
@@ -162,7 +171,8 @@
       "isNow": false
     },
     {
-      "id": 2,
+      "id": 17,
+      "day":  "friday",
       "start": "10:40",
       "end": "12:20",
       "title": "Практическая грамматика",
@@ -171,7 +181,8 @@
       "isNow": false
     },
     {
-      "id": 3,
+      "id": 18,
+      "day":  "friday",
       "start": "12:30",
       "end": "14:00",
       "title": "Делопроизводство",
@@ -180,7 +191,8 @@
       "isNow": false
     },
     {
-      "id": 4,
+      "id": 19,
+      "day":  "friday",
       "start": "14:10",
       "end": "15:40",
       "title": "Критериальное оценивание (факультатив)",
