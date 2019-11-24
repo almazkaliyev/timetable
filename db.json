@@ -18,23 +18,11 @@
     },
     {
       "id": 2,
-      "day": "monday",
       "start": "11:50",
       "end": "13:20",
-      "title": "Психология",
-      "cabinet": "303",
-      "teachers": "Виссарионова Е.Н.",
-      "isNow": false
-    },
-    {
-      "id": 3,
-      "day": "monday",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "Психология",
-      "cabinet": "303",
-      "teachers": "Виссарионова Е.Н.",
-      "isNow": false
+      "title": "Этнопедагогика",
+      "cabinet": "26",
+      "teachers": "Венгловская Н.С"
     }
   ],
   "tuesday" : [
@@ -120,7 +108,7 @@
       "end": "08:55",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "1 урок, 1 смена"
     },
     {
       "id": 1,
@@ -128,7 +116,7 @@
       "end": "09:40",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "2 урок, 1 смена"
     },
     {
       "id": 2,
@@ -136,7 +124,7 @@
       "end": "10:25",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "3 урок, 1 смена"
     },
     {
       "id": 3,
@@ -144,7 +132,7 @@
       "end": "11:20",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "4 урок, 1 смена"
     },
     {
       "id": 4,
@@ -152,7 +140,7 @@
       "end": "12:15",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "5 урок, 1 смена"
     },
     {
       "id": 5,
@@ -160,7 +148,7 @@
       "end": "13:00",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "6 урок, 1 смена"
     },
     {
       "id": 6,
@@ -168,7 +156,7 @@
       "end": "14:40",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "1 урок, 2 смена"
     },
     {
       "id": 7,
@@ -176,7 +164,7 @@
       "end": "15:25",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "2 урок, 2 смена"
     },
     {
       "id": 8,
@@ -184,7 +172,7 @@
       "end": "16:10",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "3 урок, 2 смена"
     },
     {
       "id": 9,
@@ -192,7 +180,7 @@
       "end": "17:05",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "4 урок, 2 смена"
     },
     {
       "id": 10,
@@ -200,7 +188,7 @@
       "end": "17:50",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "5 урок, 2 смена"
     },
     {
       "id": 11,
@@ -208,7 +196,7 @@
       "end": "18:35",
       "title": "",
       "cabinet": "",
-      "teachers": ""
+      "teachers": "6 урок, 2 смена"
     }
   ],
   "friday" : [
