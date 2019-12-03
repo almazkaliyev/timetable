@@ -88,99 +88,83 @@
   "thursday" : [
     {
       "id": 0,
-      "start": "08:15",
-      "end": "08:55",
-      "title": "",
-      "cabinet": "",
-      "teachers": "1 урок, 1 смена"
+      "start": "",
+      "end": "",
+      "title": "Алпыспаева Асель",
+      "cabinet": "Литературное чтение",
+      "teachers": "3 класс"
     },
     {
       "id": 1,
-      "start": "09:00",
-      "end": "09:40",
-      "title": "",
-      "cabinet": "",
-      "teachers": "2 урок, 1 смена"
+      "start": "",
+      "end": "",
+      "title": "Бостанбаев Султан",
+      "cabinet": "Литературное чтение",
+      "teachers": "2 класс"
     },
     {
       "id": 2,
-      "start": "09:45",
-      "end": "10:25",
-      "title": "",
-      "cabinet": "",
-      "teachers": "3 урок, 1 смена"
+      "start": "",
+      "end": "",
+      "title": "Жанботинова Айгерим",
+      "cabinet": "Литературное чтение",
+      "teachers": "2 класс"
     },
     {
       "id": 3,
-      "start": "10:40",
-      "end": "11:20",
-      "title": "",
-      "cabinet": "",
-      "teachers": "4 урок, 1 смена"
+      "start": "",
+      "end": "",
+      "title": "Карева Екатерина",
+      "cabinet": "Русский язык",
+      "teachers": "3 класс"
     },
     {
       "id": 4,
-      "start": "11:35",
-      "end": "12:15",
-      "title": "",
-      "cabinet": "",
-      "teachers": "5 урок, 1 смена"
+      "start": "",
+      "end": "",
+      "title": "Конюша Снежана",
+      "cabinet": "Литературное чтение",
+      "teachers": "3 класс"
     },
     {
       "id": 5,
-      "start": "12:20",
-      "end": "13:00",
-      "title": "",
-      "cabinet": "",
-      "teachers": "6 урок, 1 смена"
+      "start": "",
+      "end": "",
+      "title": "Масольдт Карина",
+      "cabinet": "Литературное чтение",
+      "teachers": "3 класс"
     },
     {
       "id": 6,
-      "start": "14:00",
-      "end": "14:40",
-      "title": "",
-      "cabinet": "",
-      "teachers": "1 урок, 2 смена"
+      "start": "",
+      "end": "",
+      "title": "Митикна Екатерина",
+      "cabinet": "Русский язык",
+      "teachers": "3 класс"
     },
     {
       "id": 7,
-      "start": "14:45",
-      "end": "15:25",
-      "title": "",
-      "cabinet": "",
-      "teachers": "2 урок, 2 смена"
+      "start": "",
+      "end": "",
+      "title": "Опара Лика",
+      "cabinet": "Литературное Чтение",
+      "teachers": "3 класс"
     },
     {
       "id": 8,
-      "start": "15:30",
-      "end": "16:10",
-      "title": "",
-      "cabinet": "",
-      "teachers": "3 урок, 2 смена"
+      "start": "",
+      "end": "",
+      "title": "Покуса Любовь",
+      "cabinet": "Литературное чтение",
+      "teachers": "3 класс"
     },
     {
       "id": 9,
-      "start": "16:25",
-      "end": "17:05",
-      "title": "",
-      "cabinet": "",
-      "teachers": "4 урок, 2 смена"
-    },
-    {
-      "id": 10,
-      "start": "17:10",
-      "end": "17:50",
-      "title": "",
-      "cabinet": "",
-      "teachers": "5 урок, 2 смена"
-    },
-    {
-      "id": 11,
-      "start": "17:55",
-      "end": "18:35",
-      "title": "",
-      "cabinet": "",
-      "teachers": "6 урок, 2 смена"
+      "start": "",
+      "end": "",
+      "title": "Хиляй Екатерина",
+      "cabinet": "Литературное чтение",
+      "teachers": "3 класс"
     }
   ],
   "friday" : [
