@@ -96,83 +96,99 @@
   "thursday" : [
     {
       "id": 0,
-      "start": "",
-      "end": "",
-      "title": "Алпыспаева Асель",
-      "cabinet": "Литературное чтение",
-      "teachers": "3 класс"
+      "start": "08:15",
+      "end": "08:55",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 1,
-      "start": "",
-      "end": "",
-      "title": "Бостанбаев Султан",
-      "cabinet": "Литературное чтение",
-      "teachers": "2 класс"
+      "start": "09:00",
+      "end": "09:40",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 2,
-      "start": "",
-      "end": "",
-      "title": "Жанботинова Айгерим",
-      "cabinet": "Литературное чтение",
-      "teachers": "2 класс"
+      "start": "09:45",
+      "end": "10:25",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 3,
-      "start": "",
-      "end": "",
-      "title": "Карева Екатерина",
-      "cabinet": "Русский язык",
-      "teachers": "3 класс"
+      "start": "10:40",
+      "end": "11:20",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 4,
-      "start": "",
-      "end": "",
-      "title": "Конюша Снежана",
-      "cabinet": "Литературное чтение",
-      "teachers": "3 класс"
+      "start": "11:35",
+      "end": "12:15",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 5,
-      "start": "",
-      "end": "",
-      "title": "Масольдт Карина",
-      "cabinet": "Литературное чтение",
-      "teachers": "3 класс"
+      "start": "12:20",
+      "end": "13:00",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 6,
-      "start": "",
-      "end": "",
-      "title": "Митина Екатерина",
-      "cabinet": "Русский язык",
-      "teachers": "3 класс"
+      "start": "14:00",
+      "end": "14:40",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 7,
-      "start": "",
-      "end": "",
-      "title": "Опара Лика",
-      "cabinet": "Литературное Чтение",
-      "teachers": "3 класс"
+      "start": "14:45",
+      "end": "15:25",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 8,
-      "start": "",
-      "end": "",
-      "title": "Покуса Любовь",
-      "cabinet": "Литературное чтение",
-      "teachers": "3 класс"
+      "start": "15:30",
+      "end": "16:10",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     },
     {
       "id": 9,
-      "start": "",
-      "end": "",
-      "title": "Хиляй Екатерина",
-      "cabinet": "Литературное чтение",
-      "teachers": "3 класс"
+      "start": "16:25",
+      "end": "17:05",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 10,
+      "start": "17:10",
+      "end": "17:50",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
+    },
+    {
+      "id": 11,
+      "start": "17:55",
+      "end": "18:35",
+      "title": "",
+      "cabinet": "",
+      "teachers": ""
     }
   ],
   "friday" : [
