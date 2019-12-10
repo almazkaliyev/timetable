@@ -18,23 +18,19 @@
     },
     {
       "id": 2,
-      "day": "monday",
       "start": "11:50",
       "end": "13:20",
       "title": "Психология",
       "cabinet": "303",
       "teachers": "Виссарионова Е.Н.",
-      "isNow": false
     },
     {
       "id": 3,
-      "day": "monday",
       "start": "14:00",
       "end": "15:30",
       "title": "Психология",
       "cabinet": "303",
       "teachers": "Виссарионова Е.Н.",
-      "isNow": false
     }
   ],
   "tuesday" : [
