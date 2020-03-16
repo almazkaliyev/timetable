@@ -1,9 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MuiThemeProvider } from '@material-ui/core';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import App from './App';
-import theme from './theme';
+
+const theme = createMuiTheme({
+  palette: {
+    type: 'dark',
+    primary: {
+      main: '#aa00ff',
+      light: '#e254ff',
+      dark: '#7200ca',
+    },
+  },
+  typography: {
+    htmlFontSize: 18,
+    h6: {
+      lineHeight: '1.5rem',
+    },
+    subtitle2: {
+      color: 'rgba(255, 255, 255, 0.68)',
+    },
+  },
+});
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
