@@ -40,7 +40,7 @@ const App = ({ ...props }) => {
   }, []);
 
   return (
-    <div>
+    <>
       <AppBar position="static" color="default">
         <Tabs value={index} onChange={handleChange} indicatorColor="primary" variant="fullWidth">
           <Tab label="ПН" />
@@ -62,7 +62,7 @@ const App = ({ ...props }) => {
           <SubjectsList subjects={subjects.friday} index={index} />
         </SwipeableViews>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -74,9 +74,6 @@ const styles = theme => ({
     minHeight: `calc(100vh - 48px - ${theme.spacing(0.5)}px)`,
     justifyContent: 'center',
     alignItems: 'flex-start',
-  },
-  loading: {
-    alignItems: 'center',
   },
   swipeContainer: {
     minHeight: `calc(100vh - 48px - ${theme.spacing(0.5)}px)`,

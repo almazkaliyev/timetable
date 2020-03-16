@@ -9,7 +9,7 @@ const SubjectList = ({ subjects, index, ...props }) => {
   return subjects.length === 0 ? (
     <span className={classes.empty}>Пар нет</span>
   ) : (
-    <div>
+    <>
       {subjects.map(subject => {
         return (
           <Subject
@@ -18,7 +18,7 @@ const SubjectList = ({ subjects, index, ...props }) => {
             isNow={inTimeRange(subject.start, subject.end) && isToday(index + 1)} />
         );
       })}
-    </div>
+    </>
   );
 };
 
