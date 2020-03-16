@@ -5,11 +5,15 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: {
     app: ['@babel/polyfill', './src/index.js'],
-    vendor: ['react', 'react-dom'],
   },
   output: {
     path: path.join(__dirname, './build'),
     filename: '[name].[hash].bundle.js',
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   module: {
     rules: [
