@@ -15,8 +15,7 @@ const SubjectList = ({ subjects, index, ...props }) => {
           <Subject
             key={subject.id}
             subject={subject}
-            isNow={inTimeRange(subject.start, subject.end) && isToday(index + 1)}
-          />
+            isNow={inTimeRange(subject.start, subject.end) && isToday(index + 1)} />
         );
       })}
     </div>

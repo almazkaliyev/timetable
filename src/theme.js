@@ -1,4 +1,4 @@
-import {createMuiTheme} from "@material-ui/core";
+import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   palette: {
@@ -6,8 +6,8 @@ const theme = createMuiTheme({
     primary: {
       main: '#aa00ff',
       light: '#e254ff',
-      dark: '#7200ca'
-    }
+      dark: '#7200ca',
+    },
   },
   typography: {
     htmlFontSize: 18,
@@ -17,7 +17,7 @@ const theme = createMuiTheme({
     subtitle2: {
       color: 'rgba(255, 255, 255, 0.68)',
     },
-  }
+  },
 });
 
-export default theme
+export default theme;

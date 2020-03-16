@@ -4,7 +4,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import AppBar from '@material-ui/core/AppBar/AppBar';
 import SwipeableViews from 'react-swipeable-views';
-import ScheduleService from './services/ScheduleService';
+import { getSchedule } from './services/ScheduleService';
 import { isHoliday } from './utils/Time';
 import SubjectsList from './components/SubjectsList';
 
@@ -33,7 +33,7 @@ const App = ({ ...props }) => {
 
   useEffect(() => {
     const fetchSchedule = async () => {
-      ScheduleService.getSchedule().then(items => setSubjects(items));
+      getSchedule().then(items => setSubjects(items));
     };
 
     fetchSchedule();
@@ -54,8 +54,7 @@ const App = ({ ...props }) => {
         <SwipeableViews
           className={classes.swipeContainer}
           index={index}
-          onChangeIndex={handleChangeIndex}
-        >
+          onChangeIndex={handleChangeIndex}>
           <SubjectsList subjects={subjects.monday} index={index} />
           <SubjectsList subjects={subjects.tuesday} index={index} />
           <SubjectsList subjects={subjects.wednesday} index={index} />
