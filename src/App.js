@@ -50,31 +50,21 @@ const App = ({ ...props }) => {
           <Tab label="ПТ" />
         </Tabs>
       </AppBar>
-      <div className={classes.container}>
-        <SwipeableViews
-          className={classes.swipeContainer}
-          index={index}
-          onChangeIndex={handleChangeIndex}>
-          <SubjectsList subjects={subjects.monday} index={index} />
-          <SubjectsList subjects={subjects.tuesday} index={index} />
-          <SubjectsList subjects={subjects.wednesday} index={index} />
-          <SubjectsList subjects={subjects.thursday} index={index} />
-          <SubjectsList subjects={subjects.friday} index={index} />
-        </SwipeableViews>
-      </div>
+      <SwipeableViews
+        className={classes.swipeContainer}
+        index={index}
+        onChangeIndex={handleChangeIndex}>
+        <SubjectsList subjects={subjects.monday} index={index} />
+        <SubjectsList subjects={subjects.tuesday} index={index} />
+        <SubjectsList subjects={subjects.wednesday} index={index} />
+        <SubjectsList subjects={subjects.thursday} index={index} />
+        <SubjectsList subjects={subjects.friday} index={index} />
+      </SwipeableViews>
     </>
   );
 };
 
 const styles = theme => ({
-  container: {
-    display: 'flex',
-    marginTop: theme.spacing(0.5),
-    width: '100%',
-    minHeight: `calc(100vh - 48px - ${theme.spacing(0.5)}px)`,
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-  },
   swipeContainer: {
     minHeight: `calc(100vh - 48px - ${theme.spacing(0.5)}px)`,
   },
