@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { withStyles } from '@material-ui/core';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import AppBar from '@material-ui/core/AppBar/AppBar';
@@ -8,12 +7,9 @@ import { getSchedule } from './services/ScheduleService';
 import { isHoliday } from './utils/Time';
 import SubjectsList from './components/SubjectsList';
 
-const App = ({ ...props }) => {
-  const { classes } = props;
-
+const App = () => {
   const today = new Date().getDay();
   const dayIndex = isHoliday(today) ? 0 : today - 1;
-
   const [index, setIndex] = useState(dayIndex);
   const [subjects, setSubjects] = useState({
     monday: [],
@@ -31,11 +27,11 @@ const App = ({ ...props }) => {
     setIndex(value);
   };
 
-  useEffect(() => {
-    const fetchSchedule = async () => {
-      getSchedule().then(items => setSubjects(items));
-    };
+  const fetchSchedule = async () => {
+    getSchedule().then(items => setSubjects(items));
+  };
 
+  useEffect(() => {
     fetchSchedule();
   }, []);
 
@@ -51,9 +47,9 @@ const App = ({ ...props }) => {
         </Tabs>
       </AppBar>
       <SwipeableViews
-        className={classes.swipeContainer}
         index={index}
-        onChangeIndex={handleChangeIndex}>
+        onChangeIndex={handleChangeIndex}
+        style={{ height: 'calc(100vh - 48px)' }}>
         <SubjectsList subjects={subjects.monday} index={index} />
         <SubjectsList subjects={subjects.tuesday} index={index} />
         <SubjectsList subjects={subjects.wednesday} index={index} />
@@ -64,10 +60,4 @@ const App = ({ ...props }) => {
   );
 };
 
-const styles = theme => ({
-  swipeContainer: {
-    minHeight: `calc(100vh - 48px - ${theme.spacing(0.5)}px)`,
-  },
-});
-
-export default withStyles(styles)(App);
+export default App;
