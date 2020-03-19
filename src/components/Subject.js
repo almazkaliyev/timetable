@@ -17,6 +17,7 @@ const SubjectContainer = styled.div`
   overflow: hidden;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     background-color: #212121;
   }
