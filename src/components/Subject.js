@@ -14,16 +14,21 @@ const SubjectContainer = styled.div`
               0px 1px 1px 0px rgba(0,0,0,0.14),
               0px 1px 3px 0px rgba(0,0,0,0.12);
   background-color: #424242;
+  overflow: hidden;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  cursor: pointer;
+  &:hover {
+    background-color: #212121;
+  }
   ${props => props.current ? `
-    &::before {
+    &::after {
     content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 4px;
-    top: 0;
-    left: 0;
     background-color: #aa00ff;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
   }` : ''}
 `;
 
