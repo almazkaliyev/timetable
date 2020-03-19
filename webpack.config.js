@@ -40,7 +40,7 @@ module.exports = {
       template: './public/index.html',
     }),
     new CopyPlugin([
-      { from: 'public/static', to: 'static' },
+      { from: 'public/static', to: '' },
     ]),
   ],
   devServer: {
