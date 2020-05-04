@@ -2,7 +2,7 @@ import React from 'react';
 
 const ThemeSwitchButton = () => {
   return (
-    <button type="button" className="nav-link ripple">
+    <button type="button" className="nav-link ripple" style={{ width: '100%' }}>
       <svg
         className="theme-icon"
         id="dark-icon"
