@@ -62,7 +62,7 @@ const App = () => {
       <Router>
         <div className="container">
           <Navbar />
-          <main className="main elevation-5">
+          <main className="main">
             <Header />
             <section className="content">
               <Timeline events={eventList} />
