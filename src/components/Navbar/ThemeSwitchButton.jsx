@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from '../../context';
 
 const ThemeSwitchButton = () => {
+  const { dispatch } = useContext(Context);
+
+  const handleOnClick = () => {
+    dispatch({ type: 'SWITCH_THEME' });
+  };
+
   return (
-    <button type="button" className="nav-link ripple" style={{ width: '100%' }}>
+    <button
+      type="button"
+      onClick={handleOnClick}
+      className="nav-link ripple"
+      style={{ width: '100%' }}>
       <svg
         className="theme-icon"
         id="dark-icon"
