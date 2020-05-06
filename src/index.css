@@ -51,7 +51,8 @@
   margin: 0;
 }
 
-a { -webkit-tap-highlight-color: transparent; }
+a,
+button { -webkit-tap-highlight-color: transparent; }
 
 a:hover,
 a:focus { outline: none; }
