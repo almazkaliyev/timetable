@@ -43,7 +43,7 @@
 }
 
 .completed .time::before {
-  /*background: var(--color-main-primary) url("completed.svg") no-repeat center;*/
+  /* background: var(--color-main-primary) url("completed.svg") no-repeat center; */
   background-size: .95rem;
 }
 

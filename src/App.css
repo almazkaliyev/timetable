@@ -16,16 +16,16 @@
   min-height: calc(100vh - 10rem);
   padding: 1.5rem;
   margin-top: -1rem;
-  background-color: var(--color-bg-body);
   overflow-y: auto;
+  background-color: var(--color-bg-body);
   border-radius: 1rem;
 }
 
 /* md */
 @media only screen and (min-width: 960px) {
   .main {
-    overflow: hidden;
     height: 100vh;
+    overflow: hidden;
   }
 
   .content {
