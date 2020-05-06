@@ -22,6 +22,8 @@
   --color-text-secondary: rgba(16, 34, 40, .6);
   --color-text-card-disabled: #69777b;
   --color-main-primary: #18c88f;
+  --color-skeleton: #18c88f;
+  --color-skeleton-highlight: #32ae85;
 }
 
 .dark {
@@ -38,6 +40,8 @@
   --color-text-secondary: rgba(255, 255, 255, .6);
   --color-text-card-disabled: #a3abad;
   --color-main-primary: #32ae85;
+  --color-skeleton: #32ae85;
+  --color-skeleton-highlight: #18c88f;
 }
 
 .light #dark-icon { display: block; }
