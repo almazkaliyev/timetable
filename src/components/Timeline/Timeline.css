@@ -37,7 +37,7 @@
   top: 1.5rem;
   right: .74rem;
   width: 1px;
-  height: 6.5rem;
+  height: 7rem;
   content: "";
   background: rgba(0, 92, 65, .2);
 }
@@ -56,10 +56,6 @@
 /* md */
 @media only screen and (min-width: 960px) {
   .timeline { width: 80%; }
-
-  .events li { margin-bottom: 1rem; }
-
-  .card { height: 7rem; }
 }
 
 /* lg */
