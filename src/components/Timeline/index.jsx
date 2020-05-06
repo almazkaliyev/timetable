@@ -1,17 +1,12 @@
-import React, { useEffect } from 'react';
+import React  from 'react';
 import { connect } from 'react-redux';
-import getEvents from '../../store/events/actions';
 import SkeletonEventList from './SkeletonEventList';
 import EventList from './EventList';
 
 import './Timeline.css';
 
 const Timeline = (props) => {
-  const { isLoading, events, dispatch } = props;
-
-  useEffect(() => {
-    dispatch(getEvents());
-  }, []);
+  const { isLoading, events } = props;
 
   return (
     <div className="timeline">
