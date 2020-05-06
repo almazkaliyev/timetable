@@ -1,12 +1,9 @@
-import React, { useContext } from 'react';
-import Context from '../../context';
+import React from 'react';
+import { connect } from 'react-redux';
+import { switchTheme } from '../../store/ui/actions';
 
-const ThemeSwitchButton = () => {
-  const { dispatch } = useContext(Context);
-
-  const handleOnClick = () => {
-    dispatch({ type: 'SWITCH_THEME' });
-  };
+const ThemeSwitchButton = (props) => {
+  const { handleOnClick } = props;
 
   return (
     <button
@@ -41,4 +38,10 @@ const ThemeSwitchButton = () => {
   );
 };
 
-export default ThemeSwitchButton;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    handleOnClick: () => dispatch(switchTheme()),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(ThemeSwitchButton);

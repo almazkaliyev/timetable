@@ -7,7 +7,10 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-loading-skeleton": "^2.0.1",
-    "react-router-dom": "^5.1.2"
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "webpack-dev-server --mode=development --open --hot",
@@ -64,6 +67,7 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
+    "redux-devtools-extension": "^2.13.8",
     "style-loader": "^1.2.1",
     "stylelint": "^13.3.3",
     "stylelint-config-recommended": "^3.0.0",

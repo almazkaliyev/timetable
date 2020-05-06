@@ -1,10 +1,8 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Timeline from './components/Timeline';
-import Context from './context';
-import reducer from './reducer';
 
 import './App.css';
 
@@ -66,23 +64,18 @@ const eventList = [
 ];
 
 const App = () => {
-  const initialMode = localStorage.getItem('mode') || 'light';
-  const [state, dispatch] = useReducer(reducer, { mode: initialMode });
-
   return (
-    <Context.Provider value={{ state, dispatch }}>
-      <Router>
-        <div className="container">
-          <Navbar />
-          <main className="main">
-            <Header />
-            <section className="content">
-              <Timeline events={eventList} />
-            </section>
-          </main>
-        </div>
-      </Router>
-    </Context.Provider>
+    <Router>
+      <div className="container">
+        <Navbar />
+        <main className="main">
+          <Header />
+          <section className="content">
+            <Timeline events={eventList} />
+          </section>
+        </main>
+      </div>
+    </Router>
   );
 };
 
