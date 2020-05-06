@@ -8,7 +8,7 @@ const EventListItem = ({ event }) => {
   const { time, title, teachers, location } = event;
 
   return (
-    <li>
+    <li className={`${event.isActive ? 'active' : ''} ${event.isCompleted ? 'completed' : ''}`}>
       <span className="time">{time}</span>
       <Card>
         <CardTitle>{title}</CardTitle>

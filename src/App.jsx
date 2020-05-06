@@ -15,6 +15,8 @@ const eventList = [
     title: 'Теоретическая фонетика',
     teachers: 'Немилостева Е.Д.',
     location: '405',
+    isActive: false,
+    isCompleted: true,
   },
   {
     id: 1,
@@ -22,6 +24,8 @@ const eventList = [
     title: 'Теоретическая фонетика',
     teachers: 'Немилостева Е.Д.',
     location: '405',
+    isActive: false,
+    isCompleted: true,
   },
   {
     id: 2,
@@ -29,6 +33,8 @@ const eventList = [
     title: 'Теоретическая фонетика',
     teachers: 'Немилостева Е.Д.',
     location: '405',
+    isActive: false,
+    isCompleted: true,
   },
   {
     id: 3,
@@ -36,6 +42,8 @@ const eventList = [
     title: 'Теоретическая фонетика',
     teachers: 'Немилостева Е.Д.',
     location: '405',
+    isActive: true,
+    isCompleted: false,
   },
   {
     id: 4,
@@ -43,6 +51,8 @@ const eventList = [
     title: 'Теоретическая фонетика',
     teachers: 'Немилостева Е.Д.',
     location: '405',
+    isActive: false,
+    isCompleted: false,
   },
   {
     id: 5,
@@ -50,6 +60,8 @@ const eventList = [
     title: 'Теоретическая фонетика',
     teachers: 'Немилостева Е.Д.',
     location: '405',
+    isActive: false,
+    isCompleted: false,
   },
 ];
 
