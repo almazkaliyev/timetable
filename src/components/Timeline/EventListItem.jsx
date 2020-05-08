@@ -5,11 +5,11 @@ import CardInfo from '../Card/CardInfo';
 import CardInfoText from '../Card/CardInfoText';
 
 const EventListItem = ({ event }) => {
-  const { time, title, teachers, location } = event;
+  const { startTime, title, teachers, location, isActive, isCompleted } = event;
 
   return (
-    <li className={`${event.isActive ? 'active' : ''} ${event.isCompleted ? 'completed' : ''}`}>
-      <span className="time">{time}</span>
+    <li className={`${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}`}>
+      <span className="time">{startTime}</span>
       <Card>
         <CardTitle>{title}</CardTitle>
         <CardInfo>

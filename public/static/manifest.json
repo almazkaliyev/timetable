@@ -1,6 +1,6 @@
 {
-  "short_name": "Sunshine",
-  "name": "Sunshine Schedule",
+  "short_name": "Keste",
+  "name": "Keste - Расписание занятий",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#aa00ff",
-  "background_color": "#121212"
+  "theme_color": "#32ae85",
+  "background_color": "#fff"
 }

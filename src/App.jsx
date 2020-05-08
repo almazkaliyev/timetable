@@ -1,12 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, { useEffect }  from 'react';
+import { connect } from 'react-redux';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Timeline from './components/Timeline';
+import fetchLists from './store/lists/actions';
+import { fetchEvents } from './store/events/actions';
 
 import './App.css';
 
-const App = () => {
+const App = (props) => {
+  const { getLists, getEvents } = props;
+
+  useEffect(() => {
+    getLists();
+    getEvents();
+  }, []);
+
   return (
     <Router>
       <div className="container">
@@ -14,7 +24,9 @@ const App = () => {
         <main className="main">
           <Header />
           <section className="content">
-            <Timeline />
+            <Switch>
+              <Route path="/:listId" component={Timeline} />
+            </Switch>
           </section>
         </main>
       </div>
@@ -22,4 +34,11 @@ const App = () => {
   );
 };
 
-export default App;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getLists: () => dispatch(fetchLists()),
+    getEvents: () => dispatch(fetchEvents()),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(App);

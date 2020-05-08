@@ -1,19 +1,34 @@
 import * as actionTypes from './actionTypes';
+import * as api from '../../api';
 
-export const fetchEvents = () => {
+const fetch = () => {
   return { type: actionTypes.FETCH };
 };
 
-export const fetchEventsSuccess = (payload) => {
+const fetchEventsSuccess = (payload) => {
   return {
     type: actionTypes.FETCH_SUCCESS,
     payload,
   };
 };
 
-export const fetchEventsFailure = (payload) => {
+export const fetchEvents = () => dispatch => {
+  dispatch(fetch());
+
+  return api.getEvents()
+    .then(events => dispatch(fetchEventsSuccess(events)));
+};
+
+export const fetchEventsByListId = (listId) => dispatch => {
+  dispatch(fetchEvents());
+
+  return api.getEventsByListId(listId)
+    .then(events => dispatch(fetchEventsSuccess(events)));
+};
+
+export const getListEvents = (payload) => {
   return {
-    type: actionTypes.FETCH_FAILURE,
+    type: actionTypes.GET_LIST_EVENTS,
     payload,
   };
 };

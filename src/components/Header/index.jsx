@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderTitle from './HeaderTitle';
 
-import './Header.css';
+import './index.css';
 
 export default () => {
   return (

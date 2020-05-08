@@ -8,7 +8,7 @@ import CardInfoText from '../Card/CardInfoText';
 const SkeletonEventListItem = () => {
   return (
     <li>
-      <span className="time"><Skeleton width={30} /></span>
+      <span className="time"><Skeleton width={31} /></span>
       <Card>
         <CardTitle><Skeleton /></CardTitle>
         <CardInfo>

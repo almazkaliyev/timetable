@@ -1,19 +1,22 @@
 .container {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   width: 100%;
   min-width: 320px;
-  height: 100vh;
+  height: 100%;
 }
 
 .main {
   z-index: 2;
   width: 100%;
-  height: calc(100vh - 4rem);
+  height: calc(100% - 4rem);
 }
 
 .content {
-  height: calc(100vh - 10rem);
-  min-height: calc(100vh - 10rem);
+  height: calc(100% - 6rem);
+  max-height: calc(100% - 6rem);
   padding: 1.5rem;
   margin-top: -1rem;
   overflow-y: auto;

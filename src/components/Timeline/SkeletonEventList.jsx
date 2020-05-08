@@ -6,9 +6,7 @@ const SkeletonEventList = () => {
   return (
     <SkeletonTheme color="var(--color-skeleton)" highlightColor="var(--color-skeleton-highlight)">
       <ul className="events">
-        {Array(7).fill({}).map(() => {
-          return <SkeletonEventListItem />;
-        })}
+        {Array(7).fill({}).map(() => <SkeletonEventListItem />)}
       </ul>
     </SkeletonTheme>
   );

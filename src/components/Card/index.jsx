@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Card.css';
+import './index.css';
 
 export default ({ children }) => {
   return (

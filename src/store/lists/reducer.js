@@ -3,8 +3,6 @@ import * as actionTypes from './actionTypes';
 const initialState = {
   isLoading: false,
   items: [],
-  selectedItems: [],
-  error: null,
 };
 
 export default (state = initialState, action = {}) => {
@@ -28,11 +26,6 @@ export default (state = initialState, action = {}) => {
       isLoading: false,
       items: [],
       error: action.payload,
-    };
-  case actionTypes.GET_LIST_EVENTS:
-    return {
-      ...state,
-      selectedItems: state.items.filter(item => item.listId === action.payload),
     };
   default:
     return { ...state };
