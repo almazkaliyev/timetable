@@ -1,20 +1,18 @@
-import React, { useEffect }  from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Timeline from './components/Timeline';
 import fetchLists from './store/lists/actions';
-import { fetchEvents } from './store/events/actions';
 
 import './App.css';
 
 const App = (props) => {
-  const { getLists, getEvents } = props;
+  const { getLists } = props;
 
   useEffect(() => {
     getLists();
-    getEvents();
   }, []);
 
   return (
@@ -37,7 +35,6 @@ const App = (props) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     getLists: () => dispatch(fetchLists()),
-    getEvents: () => dispatch(fetchEvents()),
   };
 };
 
